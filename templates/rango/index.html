@@ -23,11 +23,11 @@
 		</div>
 		<h2>Most Viewed Pages</h2>
 		<div>
-		{% if views %}
+		{% if pages %}
 		<ul>
-			{% for view in views %}
+			{% for page in pages %}
 				<li>
-				<a href="{{ view.url }}">{{ view.title }}</a>
+				<a href="{{ page.url }}">{{ page.title }}</a>
 				</li>
 			{% endfor %}
 		</ul>
