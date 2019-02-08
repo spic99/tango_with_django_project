@@ -4,7 +4,7 @@
 		<title>Rango</title>
 	</head>
 	<body>
-		<h1>Add a page to category</h1>
+		<h1>Add a page</h1>
 		<div>
 			{% if category %}
 			
@@ -14,7 +14,7 @@
 						{{ hidden }}
 					{% endfor %}
 					{% for field in form.visible_fields %}
-						{{field_errors }}
+						{{ field_errors }}
 						{{ field.help_text }}
 						{{field}}
 					{% endfor %}
